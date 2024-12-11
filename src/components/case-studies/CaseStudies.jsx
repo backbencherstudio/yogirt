@@ -67,17 +67,21 @@ const CaseStudies = () => {
 
 
     const handleWheel = (e) => {
-
-
         if (!isModalOpen) {
             const delta = e.deltaY;
-            console.log(delta)
+    
+            // Check if sliding has already started
+            if (!isSliding) {
+                setIsSliding(true); // Set the sliding flag on the first wheel event
+                return; // Exit on the first scroll, content won't change
+            }
+    
+            // Proceed with content change only after sliding starts
             if (delta > 0 && currentIndex < projects.length - 1) {
                 setCurrentIndex((prev) => prev + 1);
             } else if (delta < 0 && currentIndex > 0) {
                 setCurrentIndex((prev) => prev - 1);
             }
-            setIsSliding(true);
         }
     };
 

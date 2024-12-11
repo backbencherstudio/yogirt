@@ -61,7 +61,7 @@ const StaticContent = ({ projects }) => {
     return (
         <div>
             <div className="case-id-one">
-                <div className="img-div">
+                <div className="img-div mt-12 sm:mt-20">
                     <img className="h-full w-full" src={projects[0].image} alt="" />
                 </div>
                 <div className="context-div mt-6">
@@ -76,8 +76,8 @@ const StaticContent = ({ projects }) => {
                    </div>
                 </div>
             </div>
-            <div className="case-id-two mt-12">
-                <div className="img-div">
+            <div className="case-id-two sm:mt-24 mt-14">
+                <div className="img-div ">
                     <img className="h-full w-full" src={projects[1].image} alt="" />
                 </div>
                 <div className="context-div mt-6">
@@ -92,8 +92,8 @@ const StaticContent = ({ projects }) => {
                    </div>
                 </div>
             </div>
-            <div className="case-id-three mt-12">
-                <div className="img-div w-full">
+            <div className="case-id-three sm:mt-24 mt-14">
+                <div className="img-div sm:mt-14">
                     <img className="h-full w-full" src={projects[2].image} alt="" />
                 </div>
                 <div className="context-div mt-6">
