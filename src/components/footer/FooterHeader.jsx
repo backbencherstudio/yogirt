@@ -16,7 +16,7 @@ const FooterHeader = () => {
                         className=" border-b py-2 focus:outline-none bg-transparent w-full  block uppercase "
                     />
                     <div className='button-containerNew'>
-                    <button className="corner-buttonNew  mt-8 uppercase text-[16px] lg:text-[18px] font-[500] px-[20px]  md:px-[24px]  lg:px-[30px]  " > <span>SUBSCRIBE</span> </button>
+                    <button className="corner-buttonNew  mt-8 uppercase text-[16px] lg:text-[18px] font-[500] px-[20px]  md:px-[24px]  lg:px-[30px] " style={{backgroundColor:"rgba(18, 198, 216, 0.15)"}} > <span>SUBSCRIBE</span> </button>
                     </div>
                 </div>
             </div>

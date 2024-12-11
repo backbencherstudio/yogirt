@@ -72,7 +72,7 @@ const StaticContent = ({ projects }) => {
                     </p>
                     <p className="lg:mt-4 mt-3 text-[#D2D2D5] lg:text-lg text-[16px]  font-[400] font-helvetica">{projects[0].description}</p>
                    <div className="button-containerNew">
-                   <button onClick={() => { setIsModalOpen(true); handleIndex(0) }} className="  corner-buttonNew uppercase corner-btn-bg text-[16px] lg:text-[18px] font-[500] text-white px-[18px]  md:px-[24px]  lg:px-[30px] mt-6"  ><span>View Full Project</span></button>
+                   <button onClick={() => { setIsModalOpen(true); handleIndex(0) }} className="  corner-buttonNew uppercase corner-btn-bg text-[16px] lg:text-[18px] font-[500] text-white px-[18px]  md:px-[24px]  lg:px-[30px] mt-6"  style={{backgroundColor:"rgba(18, 198, 216, 0.15)"}}><span>View Full Project</span></button>
                    </div>
                 </div>
             </div>
@@ -88,7 +88,7 @@ const StaticContent = ({ projects }) => {
                     </p>
                     <p className="lg:mt-4 mt-3 text-[#D2D2D5] lg:text-lg text-[16px]  font-[400] font-helvetica">{projects[1].description}</p>
                     <div className="button-containerNew">
-                   <button onClick={() => { setIsModalOpen(true); handleIndex(0) }} className="  corner-buttonNew uppercase corner-btn-bg text-[16px] lg:text-[18px] font-[500] text-white px-[18px]  md:px-[24px]  lg:px-[30px] mt-6"  ><span>View Full Project</span></button>
+                   <button onClick={() => { setIsModalOpen(true); handleIndex(0) }} className="  corner-buttonNew uppercase corner-btn-bg text-[16px] lg:text-[18px] font-[500] text-white px-[18px]  md:px-[24px]  lg:px-[30px] mt-6" style={{backgroundColor:"rgba(18, 198, 216, 0.15)"}} ><span>View Full Project</span></button>
                    </div>
                 </div>
             </div>
@@ -104,7 +104,7 @@ const StaticContent = ({ projects }) => {
                     </p>
                     <p className="lg:mt-4 mt-3 text-[#D2D2D5] lg:text-lg text-[16px]  font-[400] font-helvetica">{projects[2].description}</p>
                     <div className="button-containerNew">
-                   <button onClick={() => { setIsModalOpen(true); handleIndex(0) }} className="  corner-buttonNew uppercase corner-btn-bg text-[16px] lg:text-[18px] font-[500] text-white px-[18px]  md:px-[24px]  lg:px-[30px] mt-6"  ><span>View Full Project</span></button>
+                   <button onClick={() => { setIsModalOpen(true); handleIndex(0) }} className="  corner-buttonNew uppercase corner-btn-bg text-[16px] lg:text-[18px] font-[500] text-white px-[18px]  md:px-[24px]  lg:px-[30px] mt-6" style={{backgroundColor:"rgba(18, 198, 216, 0.15)"}} ><span>View Full Project</span></button>
                    </div>
                 </div>
             </div>

@@ -222,7 +222,7 @@ const CaseStudies = () => {
                     <div className="grid grid-cols-5 content-center items-center mt-12">
                         <div className="lg:col-span-2 col-span-5 ">
                             <div className="button-containerNew" >
-                                <button onClick={() => setIsModalOpen(true)} className="corner-buttonNew uppercase  text-[16px] lg:text-[18px] font-[500] text-white py-[6px] lg:px-[20px]   hidden lg:block"  ><span>View Full Project</span></button>
+                                <button onClick={() => setIsModalOpen(true)} className="corner-buttonNew uppercase  text-[16px] lg:text-[18px] font-[500] text-white py-[6px] lg:px-[20px]   hidden lg:block" style={{backgroundColor:"rgba(18, 198, 216, 0.15)"}} ><span>View Full Project</span></button>
                             </div>
                         </div>
                         <div className="h-[45px] hidden lg:block  col-span-3 ml-4 2xl:max-w-[70%] xl:max-w-[93%]" style={{ background: "rgba(18, 198, 216, 0.15)" }}>
