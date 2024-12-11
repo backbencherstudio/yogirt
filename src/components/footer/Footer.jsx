@@ -40,9 +40,21 @@ const Footer = () => {
                 <div className="footer-social col-span-1 font-plexs ">
                     <h1 className=" text-[#12c6d8] text-[20px] lg:text-[24px]"><a href="">[ social ]</a></h1>
                     <div className="social-icons flex gap-4 mt-6">
-                       <a href="https://www.facebook.com"  className="p-2 corner-button" style={{backgroundColor:"rgba(18, 198, 216, 0.15)"}} >< RiFacebookFill className="text-[28px]  text-[#12c6d8]" /></a>
-                        <a href="https://www.linkedin.com"  className="p-2 corner-button" style={{backgroundColor:"rgba(18, 198, 216, 0.15)"}}><GrLinkedinOption  className="text-[28px]  text-[#12c6d8]"/></a>
-                        <a href="https://www.instagram.com"  className="p-2 corner-button" style={{backgroundColor:"rgba(18, 198, 216, 0.15)"}}> <TbBrandInstagramFilled className="text-[28px] text-[#12c6d8]"/></a>
+                        <div className="button-containerNew">
+                            <button className="corner-buttonNew">
+                                <a href="" ><span className="p-2" style={{backgroundColor:"rgba(18, 198, 216, 0.15)"}}> < RiFacebookFill className="text-[28px]  text-[#12c6d8]" /> </span></a>
+                            </button>
+                        </div>
+                        <div className="button-containerNew">
+                            <button className="corner-buttonNew">
+                                <a href=""><span className="p-2" style={{backgroundColor:"rgba(18, 198, 216, 0.15)"}}> <GrLinkedinOption  className="text-[28px]  text-[#12c6d8]"/> </span></a>
+                            </button>
+                        </div>
+                        <div className="button-containerNew">
+                            <button className="corner-buttonNew">
+                                <a href=""><span className="p-2" style={{backgroundColor:"rgba(18, 198, 216, 0.15)"}}> <TbBrandInstagramFilled className="text-[28px] text-[#12c6d8]"/> </span></a>
+                            </button>
+                        </div>
                         
                        
                     </div>

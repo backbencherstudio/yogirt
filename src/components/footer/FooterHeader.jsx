@@ -3,7 +3,7 @@ import '../../index.css'
 const FooterHeader = () => {
 
     return (
-        <div className="bg-gradient-to-r from-[#042d31] via-[#042528] to-[#031e20]  pt-24 px-5  font-plexs uppercase">
+        <div className="bg-gradient-to-r from-[#042d31] via-[#042528] to-[#031e20]  pt-12 lg:pt-[150px] px-5  font-plexs uppercase">
            <div className='max-w-[1320px] mx-auto'>
            <div className="gap-8 text-white items-end grid lg:grid-cols-2">
                 <div className='w-auto' >
@@ -16,7 +16,7 @@ const FooterHeader = () => {
                         className=" border-b py-2 focus:outline-none bg-transparent w-full  block uppercase "
                     />
                     <div className='button-containerNew'>
-                    <button className="corner-buttonNew  mt-8 uppercase text-[16px] lg:text-[18px] font-[500] " style={{padding:'12px 30px'}}>subscribe</button>
+                    <button className="corner-buttonNew  mt-8 uppercase text-[16px] lg:text-[18px] font-[500] px-[20px]  md:px-[24px]  lg:px-[30px]  " > <span>SUBSCRIBE</span> </button>
                     </div>
                 </div>
             </div>
@@ -26,3 +26,5 @@ const FooterHeader = () => {
 }
 
 export default FooterHeader
+
+// corner-buttonNew uppercase  text-[16px] lg:text-[18px] font-[500] text-white px-[30px] py-[12px] md:px-[24px] md:py-[10px] lg:px-[30px] lg:py-[12px] hidden lg:block

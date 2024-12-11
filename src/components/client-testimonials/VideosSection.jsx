@@ -28,7 +28,7 @@ const VideoBackground = () => {
   return (
     <div className=''>
      <div>
-     <div className="relative w-full h-[544px] group border border-[#12C6D8]  group" onMouseLeave = {handleMouseOut}>
+     <div className="relative w-full h-[544px] group border border-[#12C6D8] z-0 group" onMouseLeave = {handleMouseOut}>
       <video
         ref={videoRef}
         className="absolute top-0 left-0 w-full h-full object-cover "
@@ -37,7 +37,7 @@ const VideoBackground = () => {
         <source src="/public/videos/videos.mp4" type="video/mp4" />
       </video>
 
-      <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-black bg-opacity-50 text-white p-4 ">
+      <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-black bg-opacity-50 text-white p-4 z-10">
         {( 
             <div>
 
