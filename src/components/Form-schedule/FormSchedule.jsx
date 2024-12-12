@@ -35,7 +35,7 @@ const FormSchedule = () => {
                                 className=" border-b focus:outline-none bg-transparent w-full pb-4  pl-0 appearance-none"
                                 style={{ borderBottom: '1px solid rgba(18, 198, 216, 0.15)' }}
                             >
-                                <option disabled selected className="bg-transparent">
+                                <option className="bg-transparent">
                                     Select Your Budget
                                 </option >
                                 <option className="bg-transparent">Han Solo</option>
@@ -72,7 +72,7 @@ const FormSchedule = () => {
 
                             <div className="flex p-4 pl-0 border-b border-b-[#12C6D8] text-[18px] items-center " style={{ background: "rgba(18, 198, 216, 0.60)" }}>
                                 <div className="mx-4 p-2 bg-[#12C6D8]  w-[40px]  md:h-[40px] flex ">
-                                    <img className="  " src="/public/images/star.png" alt="" />
+                                    <img className="  " src="images/star.png" alt="" />
                                 </div>
                                 
                                 <h3 className="text-[16px] lg:text-[18px]">[ Chat with our AI assistant for a quick response ]</h3>
@@ -82,14 +82,14 @@ const FormSchedule = () => {
 
                                 <div className=" mt-4 mb-6 flex   ">
                                     <div className=" mr-3  " >
-                                        <img src="/public/images/star2.png" className="w-[100px] md:w-[80px] " alt="" />
+                                        <img src="images/star2.png" className="w-[100px] md:w-[80px] " alt="" />
                                     </div>
                                     <p className="text-[16px] lg:text-[18px]">Hello! I’m here to help you explore Progressive AI. Looking for info on our services, case studies, or anything specific? Just ask!</p>
                                 </div>
 
                                 <div className=" mt-4 mb-6 flex   ">
                                     <div className=" mr-3  " >
-                                        <img src="/public/images/star2.png" className="w-[100px] md:w-[80px] " alt="" />
+                                        <img src="images/star2.png" className="w-[100px] md:w-[80px] " alt="" />
                                     </div>
                                     <p className="text-[16px] lg:text-[18px]">Welcome to Progressive AI! Need instant answers? Chat with me to learn how we can help solve your AI and data challenges.</p>
                                 </div>

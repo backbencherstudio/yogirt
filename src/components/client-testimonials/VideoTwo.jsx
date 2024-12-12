@@ -27,13 +27,13 @@ const VideoTwo = () => {
   return (
     <div className='' >
      <div>
-     <div className="relative w-full h-[544px] group border border-[#12C6D8] mt-6 lg:mt-0" onMouseLeave = {handleMouseOut}>
+     <div className="relative w-full h-[544px] group border border-[#12C6D8] mt-14 lg:mt-0" onMouseLeave = {handleMouseOut}>
       <video
         ref={videoRef}
         className="absolute top-0 left-0 w-full h-full object-cover "
         muted
       >
-        <source src="/public/videos/video2.mp4" type="video/mp4" />
+        <source src="videos/video2.mp4" type="video/mp4" />
       </video>
 
       <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-black bg-opacity-50 text-white p-4 ">

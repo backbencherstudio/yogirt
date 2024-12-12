@@ -34,7 +34,7 @@ const VideoBackground = () => {
         className="absolute top-0 left-0 w-full h-full object-cover "
         muted
       >
-        <source src="/public/videos/videos.mp4" type="video/mp4" />
+        <source src="videos/videos.mp4" type="video/mp4" />
       </video>
 
       <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-black bg-opacity-50 text-white p-4 z-10">

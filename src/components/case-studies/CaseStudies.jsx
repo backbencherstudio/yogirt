@@ -9,7 +9,7 @@ const projects = [
         client: "Melbourne Urban Planning Authority",
         description:
             "We developed 'Treesights,' a machine learning platform for the client. Our platform enhanced decision-making efficiency by 40%, along with 85% accuracy in identifying reforestation areas and predicting tree lifespans.",
-        image: "/public/images/Rectangle 78.png",
+        image: "images/Rectangle 78.png",
         modal: {
             title: "[ Transforming Urban Forestry with AI Developments ]",
             client: "Melbourne Urban Planning Authority",
@@ -25,7 +25,7 @@ const projects = [
         client: "Airport Security Solutions",
         description:
             "We developed a deep learning solution that improved airport security by improving accuracy of detecting prohibited items in X-ray images. Our system reduced false positives, boosted accuracy by 35%, and improved screening efficiency by 40%.",
-        image: "/public/images/Rectangle 79.png",
+        image: "images/Rectangle 79.png",
         modal: {
             title: "[ Using AI-Powered Object Detection to Enhance Airport Security ]",
             client: "Airport Security Solutions",
@@ -42,7 +42,7 @@ const projects = [
         client: "A Leading University Planning for Long-Term Growth",
         description:
             "Our work involved developing a real-time dashboard that automated data processes and improved resource allocation. This solution exceeded their expectations by reducing planning time by 40% and enhanced forecast accuracy by 30%.",
-        image: "/public/images/Rectangle 80.png",
+        image: "images/Rectangle 80.png",
         modal: {
             title: "[ Using AI-Powered Object Detection to Enhance Airport Security ]",
             client: "A Leading University Planning for Long-Term Growth",
@@ -66,24 +66,27 @@ const CaseStudies = () => {
     const modalRef = useRef(null);
 
 
+
+
+
     const handleWheel = (e) => {
         if (!isModalOpen) {
             const delta = e.deltaY;
-    
+
             // Check if sliding has already started
             if (!isSliding) {
                 setIsSliding(true); // Set the sliding flag on the first wheel event
-                return; // Exit on the first scroll, content won't change
-            }
-    
-            // Proceed with content change only after sliding starts
-            if (delta > 0 && currentIndex < projects.length - 1) {
-                setCurrentIndex((prev) => prev + 1);
-            } else if (delta < 0 && currentIndex > 0) {
-                setCurrentIndex((prev) => prev - 1);
+            } else {
+                // Proceed with content change only after sliding starts
+                if (delta > 0 && currentIndex < projects.length - 1) {
+                    setCurrentIndex((prev) => prev + 1);
+                } else if (delta < 0 && currentIndex > 0) {
+                    setCurrentIndex((prev) => prev - 1);
+                }
             }
         }
     };
+
 
     useEffect(() => {
         const slider = sliderRef.current;
@@ -165,10 +168,41 @@ const CaseStudies = () => {
         };
     }, [isModalOpen]);
 
+    // Reference to the scrollable container
+
+    const scrollContainerRef = useRef(null);
+
+    // Handle scroll event
+    useEffect(() => {
+        const handleScroll = () => {
+            if (scrollContainerRef.current) {
+                const scrollLeft = scrollContainerRef.current.scrollLeft;
+                const containerWidth = scrollContainerRef.current.scrollWidth;
+                const viewportWidth = scrollContainerRef.current.clientWidth;
+
+                // Calculate the current index
+                const totalScrollableWidth = containerWidth - viewportWidth;
+                const percentageScrolled = scrollLeft / totalScrollableWidth;
+
+                const newIndex = Math.round(percentageScrolled * (projects.length - 1));
+                setCurrentIndex(newIndex);
+            }
+        };
+
+        const container = scrollContainerRef.current;
+        container.addEventListener("scroll", handleScroll);
+
+        return () => {
+            if (container) {
+                container.removeEventListener("scroll", handleScroll);
+            }
+        };
+    }, [projects.length]);
 
 
     return (
-        <div className="pt-[29px]  lg:py-[100px] px-5  md:px-5  bg-[#021617] font-plexs vh relative z-0 " onWheel={handleWheel}  >
+        // onWheel={handleWheel} is correct i changed the name to hide this event
+        <div className="pt-[29px]  lg:py-[100px] px-5  md:px-5  bg-[#021617] font-plexs vh relative z-0 " >
             <div className="sticky-0  padding-correction ">
                 <div className="case-studies-header text-[#12C6D8] uppercase xl:w-[1021px]">
                     <p className="text-[12px] md:text-[16px] lg:text-[18px] font-[500] ">[ 006// Case Studies ]</p>
@@ -176,9 +210,9 @@ const CaseStudies = () => {
                 </div>
 
 
-                <div className="">
+                <div className=" " >
                     <div
-                        className="grid lg:grid-cols-5 gap-4 text-white  mt-[32px] md:mt-[40px] lg:mt-[100px] font-plexs " >
+                        className="grid lg:grid-cols-5 gap-4 text-white  mt-[32px] md:mt-[40px] lg:mt-[100px] font-plexs lg:h-96" >
                         {isLargeScreen ? (<> <div className="lg:col-span-2 col-span-5">
                             <h1 className="text-[22px] xl:text-[40px]  font-[700] leading-none" >{projects[currentIndex].id}</h1>
                             <h3 className="text-[24px] xl:text-[32px] text-lg:[28px] h3-ch mt-3  xl:mt-6 font-[700] text-[#12C6D8] uppercase leading-[130%] ">{projects[currentIndex].title}</h3>
@@ -190,32 +224,22 @@ const CaseStudies = () => {
                         </div>
 
                             {/* Slider Section */}
-                            <div className="lg:col-span-3 col-span-5 items-center justify-center overflow-hidden ml-3 h-full">
+                            {/*----------------horizontal scrobar is applied here */}
+                            <div className="lg:col-span-3 col-span-5">
                                 <div
-                                    ref={sliderRef}
-                                    className="flex gap-6 transition-transform duration-500 ease-in-out h-full slide-image-translate"
-                                    style={{
-                                        transform: (window.innerWidth >= 1500 && window.innerWidth <= 2000)
-                                            ? `translateX(-${currentIndex * 71}%)` // For width >= 1536px
-
-                                            : (window.innerWidth >= 1300 && window.innerWidth < 1500)
-                                                ? `translateX(-${currentIndex * 82}%)` // For width between 1024px and 1536px
-                                                : `translateX(-${currentIndex * 104}%)`
-                                    }}
-
-
+                                    ref={scrollContainerRef}
+                                    className="flex gap-6 overflow-x-auto custom-scroll h-full"
                                 >
                                     {projects.map((project, index) => (
                                         <img
                                             key={index}
                                             src={project.image}
                                             alt={project.title}
-                                            className="w-full h-ful object-cover "
+                                            className={`w-full h-full object-cover pb-[70px] ${index === currentIndex ? "opacity-100" : "opacity-50"
+                                                }`}
                                         />
                                     ))}
                                 </div>
-
-
                             </div> </>) : (
                             <StaticContent projects={projects} ></StaticContent>
                         )}
@@ -223,18 +247,18 @@ const CaseStudies = () => {
 
                     {/* button section start from here  */}
 
-                    <div className="grid grid-cols-5 content-center items-center mt-12">
+                    <div className="grid grid-cols-5 content-center items-center mt-9 xl:mt-12">
                         <div className="lg:col-span-2 col-span-5 ">
                             <div className="button-containerNew" >
-                                <button onClick={() => setIsModalOpen(true)} className="corner-buttonNew uppercase  text-[16px] lg:text-[18px] font-[500] text-white py-[6px] lg:px-[20px]   hidden lg:block" style={{backgroundColor:"rgba(18, 198, 216, 0.15)"}} ><span>View Full Project</span></button>
+                                <button onClick={() => setIsModalOpen(true)} className="corner-buttonNew uppercase  text-[16px] lg:text-[18px] font-[500] text-white py-[6px] lg:px-[20px]   hidden lg:block" style={{ backgroundColor: "rgba(18, 198, 216, 0.15)" }} ><span>View Full Project</span></button>
                             </div>
                         </div>
-                        <div className="h-[45px] hidden lg:block  col-span-3 ml-4 2xl:max-w-[70%] xl:max-w-[93%]" style={{ background: "rgba(18, 198, 216, 0.15)" }}>
+                        {/* <div className="h-[45px] hidden lg:block  col-span-3 ml-4 2xl:max-w-[70%] xl:max-w-[93%]" style={{ background: "rgba(18, 198, 216, 0.15)" }}>
                             <div
                                 className="h-full bg-[#12C6D8] transition-all duration-500 ease-in-out "
                                 style={{ width: `${progressPercentage}%` }}
                             ></div>
-                        </div>
+                        </div> */}
                     </div>
                     {/* //modal content start from here--------------------- */}
                     {isModalOpen && (

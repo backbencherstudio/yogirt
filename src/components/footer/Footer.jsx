@@ -14,7 +14,7 @@ const Footer = () => {
             <div className=" grid sm:grid-cols-2 sm:gap-y-20 lg:grid-cols-3 xl:grid-cols-4 text-white gap-12 xl:gap-12 lg:gap-10 border-t border-[#12C6D826] lg:pt-12 pt-6"  >
                 <div className="footer-logo col-span-1 font-helvetica ">
                     <div>
-                    <img className=" mb-4 w-[36px] h-[56px] md:w-[52px] md:h-[80px]" src="/public/images/logo.png" alt="" />
+                    <img className=" mb-4 w-[36px] h-[56px] md:w-[52px] md:h-[80px]" src="images/logo.png" alt="" />
                     <h3 className=" mb-6 font-[500] text-[16px] lg:text-[18px]">Custom AI Solutions and AI Consulting | Progressive AI</h3>
                     <p className="normal-case text-[16px] lg:text-[18px] text-[#D2D2D5]  font-[400]">Become an industry leader by strategically integrating AI automation solutions and experience exponential business growth with <span className="font-[500] text-white">Progressive AI.</span>  </p>
                     </div>

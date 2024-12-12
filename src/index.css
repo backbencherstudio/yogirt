@@ -5,28 +5,53 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-.h3-ch{
-    max-width:25ch;
-}
-
-@media (max-width: 768px) {
-  .footer-container h3{
-      font-size: 16px;
+  .custom-scroll {
+    scrollbar-color: rgba(18, 198, 216, 0.15);
+    
   }
-}
+  
+  .custom-scroll::-webkit-scrollbar {
+    height: 45px; /* Adjust height for horizontal scrollbar */
+    
+  }
+  
+  .custom-scroll::-webkit-scrollbar-track {
+    background: rgba(18, 198, 216, 0.15);
+  }
+  
+  .custom-scroll::-webkit-scrollbar-thumb {
+    background: #12C6D8;
+    /* border-radius: 5px; */
+  }
+  
 
-.sticky-0{
+
+
+/* .h3-ch{
+    max-width:25ch;
+} */
+
+
+/* .sticky-0{
   position: sticky;
   top:0;
   
-}
+  }
+  
+  .vh{
+    min-height: 150vh;
+    } */
 
-.vh{
-  min-height: 150vh;
-}
-/* style={{ transform: `translateX(-${currentIndex * 87}%)` }} */
+    
+    /* style={{ transform: `translateX(-${currentIndex * 87}%)` }} */
+
+
+
+    @media (max-width: 768px) {
+      .footer-container h3{
+          font-size: 16px;
+      }
+    }
 
 @keyframes popIn {
   from {
