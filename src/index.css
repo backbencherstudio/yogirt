@@ -24,6 +24,25 @@
     /* border-radius: 5px; */
   }
   
+  .custom-scroll2 {
+    scrollbar-color: rgba(18, 198, 216, 0.15);
+    
+  }
+  
+  .custom-scroll2::-webkit-scrollbar {
+    width: 1px; /* Adjust height for horizontal scrollbar */
+    
+  }
+  
+  .custom-scroll2::-webkit-scrollbar-track {
+    background: rgba(18, 198, 216, 0.15);
+  }
+  
+  .custom-scroll2::-webkit-scrollbar-thumb {
+    background: #12C6D8;
+    /* border-radius: 5px; */
+  }
+  
 
 
 
@@ -32,15 +51,15 @@
 } */
 
 
-/* .sticky-0{
+.sticky-0{
   position: sticky;
   top:0;
   
-  }
+  }      
   
   .vh{
-    min-height: 150vh;
-    } */
+    min-height: 170vh;
+    }
 
     
     /* style={{ transform: `translateX(-${currentIndex * 87}%)` }} */
@@ -55,17 +74,31 @@
 
 @keyframes popIn {
   from {
-    /* transform: scale(0.5); */
+    transform: scale(0.5);
     opacity: 0;
   }
   to {
-    /* transform: scale(1); */
+    transform: scale(1);
     opacity: 1;
   }
 }
 
 .modal-animate {
   animation: popIn 0.6s ease-out;
+}
+@keyframes popIns {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modal-animates {
+  animation: popIns 0.6s ease-out;
 }
 
 @media (min-width: 1400px) {

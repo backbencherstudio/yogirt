@@ -64,6 +64,7 @@ const CaseStudies = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const sliderRef = useRef(null);
     const modalRef = useRef(null);
+    const scrollContainerRef = useRef(null);
 
 
 
@@ -170,7 +171,7 @@ const CaseStudies = () => {
 
     // Reference to the scrollable container
 
-    const scrollContainerRef = useRef(null);
+   
 
     // Handle scroll event
     useEffect(() => {
@@ -202,8 +203,8 @@ const CaseStudies = () => {
 
     return (
         // onWheel={handleWheel} is correct i changed the name to hide this event
-        <div className="pt-[29px]  lg:py-[100px] px-5  md:px-5  bg-[#021617] font-plexs vh relative z-0 " >
-            <div className="sticky-0  padding-correction ">
+        <div className="pt-[29px]  lg:py-[100px] px-5  md:px-5  bg-[#021617] font-plexs vhhhh relative z-0 "  >
+            <div className="sticky-00  padding-correction ">
                 <div className="case-studies-header text-[#12C6D8] uppercase xl:w-[1021px]">
                     <p className="text-[12px] md:text-[16px] lg:text-[18px] font-[500] ">[ 006// Case Studies ]</p>
                     <h2 className="text-white text-[20px]  md:text-[26px] lg:text-[32px] xl:text-[40px] font-[700] pt-[15px] font-plexs">Our team has successfully <span className="text-[#12C6D8]" >helped businesses from various industries</span> , by providing AI powered solutions to their complex business specific problems. Take a look at how we did it.</h2>

@@ -7,13 +7,15 @@ import ClientTestimonials from './components/client-testimonials/ClientTestimoni
 import CaseStudies from './components/Case-studies/CaseStudies'
 // import Chooses from './components/choose-section/Chooses'
 import FormSchedule from './components/Form-schedule/FormSchedule'
-import ProjectShowcase from './components/case-studies/CaseStudies2'
+import ScrollComponent from './components/choose-section/Chooses'
+
 
 function App() {
 
 
   return (
     <>
+    <ScrollComponent></ScrollComponent>
      <CaseStudies></CaseStudies>
     <ClientTestimonials></ClientTestimonials>
     <FormSchedule></FormSchedule>
