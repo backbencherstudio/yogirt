@@ -8,7 +8,6 @@ import CaseStudies from './components/Case-studies/CaseStudies'
 // import Chooses from './components/choose-section/Chooses'
 import FormSchedule from './components/Form-schedule/FormSchedule'
 import ScrollComponent from './components/choose-section/Chooses'
-import ScrollSlideCompo from './components/case-studies/newSlide'
 
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
 
   return (
     <>
-    <ScrollSlideCompo></ScrollSlideCompo>
     <ScrollComponent></ScrollComponent>
      <CaseStudies></CaseStudies>
     <ClientTestimonials></ClientTestimonials>
