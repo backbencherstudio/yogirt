@@ -12,8 +12,8 @@ const ScrollComponent = () => {
     {
       title: "[ 001//004 REDUCE INFRASTRUCTURE COSTS ]",
       descript: 'WITH OUR OPTIMIZED ARTIFICIAL INTELLIGENCE SOLUTION, YOU CAN CUT INFRASTRUCTURE COSTS BY UP TO 40%, ALLOWING YOUR BUSINESS TO FOCUS ON SCALABILITY',
-      image: "images/frame11.png",
-      img2:"images/frame1.png",
+      image: "images/frame1.png",
+      img2:"images/frame11.png",
       bgimg: "images/frame layer.png"
     },
     {
@@ -85,7 +85,7 @@ const ScrollComponent = () => {
             </div>
             <div className="lg:flex hidden lg:h-96 xl:mt-[100px] lg:mt-[60px] mt-[42px]   ">
               {/* Left Section - Images */}
-              <div className="w-2/4 flex items-center justify-center relative overflow-hidden modal-animates">
+              <div className="w-2/4 flex items-center justify-center relative overflow-hidden ">
                 {/* Background Frame */}
                 <div
                   className="absolute inset-0 z-0 "
@@ -115,11 +115,16 @@ const ScrollComponent = () => {
                 ></div>
 
                 {/* Foreground Image */}
-                <div className="z-10 relative overflow-hidden">
+                <div className="z-10 relative overflow-hidden modal-animates">
                   <img
                     src={content[currentIndex].image}
                     alt={`Image ${currentIndex + 1}`}
-                    className="rounded-md transition-all duration-300 h-[320px] modal-animates"
+                    className="rounded-md transition-all duration-300 h-[320px] "
+                    style={{
+                      transition: "all 0.7s ease-in-out",
+                      opacity: 1,
+                      transform: `translateY(${currentIndex * 10}px) scale(1)`,
+                    }}
                   />
                 </div>
               </div>

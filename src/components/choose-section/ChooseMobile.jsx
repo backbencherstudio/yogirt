@@ -36,7 +36,7 @@ const ChooseMobile = ({ elements }) => {
                 <div className="z-10">
                   <img
                     src={elements.img2}
-                    className="w-[100%] sm:w-[90%] md:w-[80%] " 
+                    className="w-[100%]  " 
                   />
                 </div>
               </div>
