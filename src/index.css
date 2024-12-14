@@ -51,15 +51,15 @@
 } */
 
 
-.sticky-0{
+/* .sticky-0{
   position: sticky;
   top:0;
   
   }      
   
   .vh{
-    min-height: 170vh;
-    }
+    min-height: 200vh;
+    } */
 
     
     /* style={{ transform: `translateX(-${currentIndex * 87}%)` }} */
