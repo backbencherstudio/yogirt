@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  .custom-scroll {
+    scrollbar-color: rgba(18, 198, 216, 0.15);
+    
+  }
+  
+  .custom-scroll::-webkit-scrollbar {
+    height: 45px; /* Adjust height for horizontal scrollbar */
+    
+  }
+  
+  .custom-scroll::-webkit-scrollbar-track {
+    background: rgba(18, 198, 216, 0.15);
+  }
+  
+  .custom-scroll::-webkit-scrollbar-thumb {
+    background: #12C6D8;
+    /* border-radius: 5px; */
+  }
+  
+  .custom-scroll2 {
+    scrollbar-color: rgba(18, 198, 216, 0.15);
+    
+  }
+  
+  .custom-scroll2::-webkit-scrollbar {
+    width: 1px; /* Adjust height for horizontal scrollbar */
+    
+  }
+  
+  .custom-scroll2::-webkit-scrollbar-track {
+    background: rgba(18, 198, 216, 0.15);
+  }
+  
+  .custom-scroll2::-webkit-scrollbar-thumb {
+    background: #12C6D8;
+    /* border-radius: 5px; */
+  }
+  
+
+
+
+/* .h3-ch{
+    max-width:25ch;
+} */
+
+
+.sticky-0{
+  position: sticky;
+  top:0;
+  
+  }      
+  
+  .vh{
+    min-height: 170vh;
+    }
+
+    
+    /* style={{ transform: `translateX(-${currentIndex * 87}%)` }} */
+
+
+
+    @media (max-width: 768px) {
+      .footer-container h3{
+          font-size: 16px;
+      }
+    }
+
+@keyframes popIn {
+  from {
+    /* transform: scale(0.5); */
+    opacity: 0;
+  }
+  to {
+    /* transform: scale(1); */
+    opacity: 1;
+  }
+}
+
+.modal-animate {
+  animation: popIn 0.6s ease-out;
+}
+
+@media (min-width: 1400px) {
+  .padding-correction{
+      padding-left: 70px;
+  }
+}
+@media (min-width: 1500px) {
+  .padding-correction{
+      padding-left: 100px;
+  }
+}
+@media (min-width: 1600px) {
+  .padding-correction{
+      padding-left: 200px;
+  }
+}
+@media (min-width: 1700px) {
+  .padding-correction{
+      padding-left: 300px;
+  }
+}
+

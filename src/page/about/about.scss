@@ -1,0 +1,185 @@
+.marquee {
+  color: var(--Main-Cayan, #12c6d8);
+  font-family: "IBM Plex Mono";
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 144px */
+  text-transform: uppercase;
+  margin-top: 93px;
+  margin-bottom: 215px;
+}
+
+.about-us {
+  width: min(1320px, 90vw);
+  margin: 0 auto;
+  .title {
+    align-self: stretch;
+    color: var(--Main-Cayan, #12c6d8);
+    font-family: "IBM Plex Mono";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  .desc {
+    color: var(--Gray-Black-100, #d2d2d5);
+    font-family: "IBM Plex Mono";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 52px */
+    text-transform: uppercase;
+
+    span {
+      color: var(--Main-Cayan, #12c6d8);
+    }
+  }
+}
+
+.strateg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+ 
+  width: min(1320px, 95vw);
+
+  margin: 0 auto;
+  margin-top: 150px;
+  // padding-bottom: ;
+  padding-bottom: 168px;
+
+  .StrategicSolutions {
+    position: relative;
+    max-width: 564px; /* Limit the width for content */
+    text-align: left; /* Ensure text alignment remains left */
+    padding: 20px;
+
+    span {
+      color: var(--Main-Cayan, #12c6d8);
+      font-family: "IBM Plex Mono";
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 130%;
+      white-space: nowrap;
+    }
+
+    p {
+      margin-top: 24px;
+      color: var(--Gray-Black-100, #d2d2d5);
+      font-family: "Helvetica Neue";
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%; /* 52px */
+    }
+
+ 
+  }
+
+  /* Staggered alignment styles */
+  .left {
+    align-self: flex-start;
+    transform: translateX(0); /* Default position */
+  }
+
+  .right {
+    //   align-self: flex-end;
+    transform: translateX(-50px); /* Slight right offset */
+  }
+
+  .more-right {
+    align-self: flex-end;
+    transform: translateX(-100px); /* More right offset */
+  }
+
+  .center {
+    align-self: center;
+    transform: translateX(0); /* Center position */
+  }
+}
+
+/* Add responsive behavior for alignment */
+@media (max-width: 864px) {
+  .marquee{
+    font-size: 48px;
+    margin-top: 20x;
+    margin-bottom: 70px;
+  }
+  .about-us {
+    
+    .title{
+      font-size: 12px;
+    }
+    .desc{
+      font-size: 20px;
+    }
+    
+  }
+  .strateg {
+    gap: 56px;
+    display: block;
+    margin-top: 56px;
+    .StrategicSolutions {
+      align-self: center; /* Center all items on smaller screens */
+      align-self: flex-start;
+      transform: translateX(0);
+      margin-top: 20px;
+
+      span {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+      }
+      p {
+        font-family: "Helvetica Neue";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .strateg {
+    gap: 80px;
+  }
+
+  .StrategicSolutions {
+    span {
+      font-size: 2.4rem; 
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .strateg {
+    gap: 80px; 
+    
+  }
+
+  .StrategicSolutions {
+    margin-left: 0px;
+    span {
+      font-size: 2rem;
+
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+

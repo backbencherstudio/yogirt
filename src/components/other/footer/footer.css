@@ -1,0 +1,138 @@
+/* 
+
+.corner-buttonNew{
+    cursor: pointer;
+    background:transparent;
+    border: 2px solid #12C6D8;
+    position: relative;
+    transition: color .3s;
+    z-index: 1;
+}
+
+.corner-buttonNew:hover::before{
+    width: 0;
+}
+.corner-buttonNew:hover::after{
+    width: 0;
+}
+
+.corner-buttonNew::before,.corner-buttonNew::after{
+    content: " ";
+    position: absolute;
+    background: #032325;
+    z-index: -1;
+    transition: all .3s;
+}
+.corner-buttonNew::before{
+    width: calc(100% - 10px);
+    height: calc(101% + 5px);
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.corner-buttonNew::after{
+    height: calc(100% - 10px);
+    width: calc(101% + 5px);
+    left: -2px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+  .corner-btn-bg, .corner-btn-form{
+    border: 2px solid #fff;
+}
+
+ .corner-btn-bg::before, .corner-btn-bg::after{
+    background: #042d31;
+ }
+
+ .corner-btn-form::before, .corner-btn-form::after{
+    background: rgba(18, 198, 216, 0.15);
+
+ }
+ .btn-video::after, .btn-video::before{
+    background: #032325;
+ }
+.btn-video{
+    border: 1px solid white; 
+}
+.btn-video::after{
+    background-color: #353838;
+    width: calc(101% + 2px);
+}
+.btn-video::before{
+    background-color: #353838;;
+    
+} */
+
+.button-containerNew .corner-buttonNew {
+    /* width: 168px;
+    height: 47px;
+    margin: 20px; */
+    background: none;
+    border: 1px solid transparent;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+    position: relative;
+  }
+  
+  .button-containerNew .corner-buttonNew span {
+    display: block;
+    line-height: 47px;
+  }
+  
+  .button-containerNew .corner-buttonNew::before,
+  .button-containerNew .corner-buttonNew::after,
+  .button-containerNew .corner-buttonNew span::before,
+  .button-containerNew .corner-buttonNew span::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    transition: all 0.5s;
+  }
+  
+  .button-containerNew .corner-buttonNew::before {
+    top: -1px;
+    left: -1px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+  }
+  
+  .button-containerNew .corner-buttonNew::after {
+    top: -1px;
+    right: -1px;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+  }
+  
+  .button-containerNew .corner-buttonNew span::before {
+    bottom: -1px;
+    left: -1px;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+  }
+  
+  .button-containerNew .corner-buttonNew span::after {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+  }
+  
+  .button-containerNew .corner-buttonNew:hover {
+    color: #ffffff;
+  }
+  
+  .button-containerNew .corner-buttonNew:hover::before,
+  .button-containerNew .corner-buttonNew:hover::after,
+  .button-containerNew .corner-buttonNew:hover span::before,
+  .button-containerNew .corner-buttonNew:hover span::after {
+    width: 100%;
+    height: 100%;
+  }
+  
