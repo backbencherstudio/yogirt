@@ -5,9 +5,10 @@ import FooterHeader from './components/footer/FooterHeader'
 
 import ClientTestimonials from './components/client-testimonials/ClientTestimonials'
 import CaseStudies from './components/Case-studies/CaseStudies'
-// import Chooses from './components/choose-section/Chooses'
+import Chooses from './components/choose-section/Chooses'
 import FormSchedule from './components/Form-schedule/FormSchedule'
-import ScrollComponent from './components/choose-section/Chooses'
+import Choose2 from './components/choose-section/NewScroll'
+// import ScrollComponent from './components/choose-section/Chooses'
 
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
 
   return (
     <>
-    <ScrollComponent></ScrollComponent>
+    {/* <Choose2></Choose2> */}
+    <Chooses></Chooses>
      <CaseStudies></CaseStudies>
     <ClientTestimonials></ClientTestimonials>
     <FormSchedule></FormSchedule>

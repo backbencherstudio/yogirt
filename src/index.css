@@ -55,11 +55,14 @@
   position: sticky;
   top:0;
   
-  }      
+  }       */
   
-  .vh{
-    min-height: 200vh;
+  /* .vh{
+    min-height: 300vh;
     } */
+  .vhs{
+    min-height: 300vh;
+    }
 
     
     /* style={{ transform: `translateX(-${currentIndex * 87}%)` }} */
