@@ -1,0 +1,56 @@
+.Workflow-container {
+  background-color: black;
+  // height: 200px;
+  height: 100%;
+  .about-service {
+    // background-color: black;
+    width: 1320px;
+    margin: 0 auto;
+    color: #fff;
+    .title {
+      align-self: stretch;
+      color: var(--Main-Cayan, #12c6d8);
+      font-family: "IBM Plex Mono";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+    .desc {
+      color: var(--Gray-Black-100, #d2d2d5);
+      font-family: "IBM Plex Mono";
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 130%; /* 52px */
+      text-transform: uppercase;
+      margin-bottom: 100px;
+      span {
+        color: var(--Main-Cayan, #12c6d8);
+      }
+    }
+  }
+  .box1 {
+    border-radius: 638px;
+    background: var(--Main-Cayan, #12c6d8);
+    filter: blur(600px);
+    width: 638px;
+    position: absolute;
+
+    height: 638px;
+    //   }
+    //   .box2 {
+    //     filter: blur(150px);
+    //     position: absolute;
+
+    //     border-radius: 638px;
+    //     background: var(--Main-Cayan, #12c6d8);
+    //     filter: blur(600px);
+
+    //     width: 638px;
+    //     height: 638px;
+    //   }
+  }
+}
