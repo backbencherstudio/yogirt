@@ -13,6 +13,7 @@ import FormSchedule from "../../components/other/Form-schedule/FormSchedule";
 import FooterHeader from "../../components/other/footer/FooterHeader";
 import Footer from "../../components/other/footer/Footer";
 import Chooses from "../../components/other/choose-section/Chooses";
+import TimelineSection from "../../components/other/workflow/Workflow";
 
 
 
@@ -144,9 +145,9 @@ const Home = () => {
 
       
      
-      {/* <section>
-        <Workflow />
-      </section>  */}
+      <section>
+        <TimelineSection />
+      </section> 
 
         <section> 
         <Chooses> </Chooses> 
