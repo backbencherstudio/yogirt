@@ -1,8 +1,82 @@
 {
-  "hash": "f0deaad6",
+  "hash": "9a4bca30",
   "configHash": "07cb2425",
-  "lockfileHash": "007bd75a",
-  "browserHash": "3a4784d5",
-  "optimized": {},
-  "chunks": {}
+  "lockfileHash": "09cb5143",
+  "browserHash": "0fbb80ba",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "0859ae04",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "3cb3a793",
+      "needsInterop": true
+    },
+    "aos": {
+      "src": "../../node_modules/aos/dist/aos.esm.js",
+      "file": "aos.js",
+      "fileHash": "ffd00a86",
+      "needsInterop": false
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.mjs",
+      "file": "react-router-dom.js",
+      "fileHash": "39d962a8",
+      "needsInterop": false
+    },
+    "react-simple-typewriter": {
+      "src": "../../node_modules/react-simple-typewriter/dist/index.js",
+      "file": "react-simple-typewriter.js",
+      "fileHash": "08bba0fc",
+      "needsInterop": true
+    },
+    "react-icons/ri": {
+      "src": "../../node_modules/react-icons/ri/index.mjs",
+      "file": "react-icons_ri.js",
+      "fileHash": "de797054",
+      "needsInterop": false
+    },
+    "react-icons/tb": {
+      "src": "../../node_modules/react-icons/tb/index.mjs",
+      "file": "react-icons_tb.js",
+      "fileHash": "f1cd3801",
+      "needsInterop": false
+    },
+    "react-icons/gr": {
+      "src": "../../node_modules/react-icons/gr/index.mjs",
+      "file": "react-icons_gr.js",
+      "fileHash": "49ebbc8f",
+      "needsInterop": false
+    },
+    "react-icons/fa": {
+      "src": "../../node_modules/react-icons/fa/index.mjs",
+      "file": "react-icons_fa.js",
+      "fileHash": "2b06f6ca",
+      "needsInterop": false
+    },
+    "react-icons/md": {
+      "src": "../../node_modules/react-icons/md/index.mjs",
+      "file": "react-icons_md.js",
+      "fileHash": "8bb33805",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-IPYILTUR": {
+      "file": "chunk-IPYILTUR.js"
+    },
+    "chunk-WNYT3RZK": {
+      "file": "chunk-WNYT3RZK.js"
+    },
+    "chunk-4SFRHSJ3": {
+      "file": "chunk-4SFRHSJ3.js"
+    },
+    "chunk-EQCVQC35": {
+      "file": "chunk-EQCVQC35.js"
+    }
+  }
 }

@@ -2,7 +2,7 @@ import { RiFacebookFill } from "react-icons/ri";
 import { TbBrandInstagramFilled } from "react-icons/tb";
 import { GrLinkedinOption } from "react-icons/gr";
 import './footer.css'
-import '../../../index.css'
+// import '../../index.css'
 
 
 

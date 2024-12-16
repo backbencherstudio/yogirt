@@ -203,7 +203,7 @@ const CaseStudies = () => {
 
     return (
         // onWheel={handleWheel} is correct i changed the name to hide this event
-        <div className="pt-[50px]  lg:py-[150px] xl:pt-[200px] md:py-[100px] px-5  md:px-5  bg-[#021617] font-plexs vhhhh relative z-0 "  >
+        <div className="pt-[56px] md:pt-[84px]  lg:py-[100px] lg:pt-[150px] xl:pt-[200px]  px-5  md:px-5  bg-[#021617] font-plexs vhhhh relative z-0 "  >
             <div className="sticky-00  padding-correction ">
                 <div className="case-studies-header text-[#12C6D8] uppercase xl:w-[1021px]">
                     <p className="text-[12px] md:text-[16px] lg:text-[18px] font-[500] ">[ 006// Case Studies ]</p>

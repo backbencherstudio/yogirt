@@ -12,8 +12,7 @@ import ClientTestimonials from "../../components/other/client-testimonials/Clien
 import FormSchedule from "../../components/other/Form-schedule/FormSchedule";
 import FooterHeader from "../../components/other/footer/FooterHeader";
 import Footer from "../../components/other/footer/Footer";
-import ChooseMobile from "../../components/other/choose-section/ChooseMobile";
-import ScrollComponent from "../../components/other/choose-section/Chooses";
+import Chooses from "../../components/other/choose-section/Chooses";
 
 
 
@@ -149,10 +148,12 @@ const Home = () => {
         <Workflow />
       </section>  */}
 
-  
+        <section> 
+        <Chooses> </Chooses> 
+        </section>
 
       <section className="relative ">
-        <ScrollComponent />
+        {/* <Choose /> */}
       {/* <div className="relative "> */}
      <img className="absolute divsImage -bottom-[34px] md:-bottom-[48px] lg:-bottom-[68px] xl:-bottom-[90px] 2xl:-bottom-[118px] scale-y-[-1] " src={group} alt="" />
   

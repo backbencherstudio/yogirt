@@ -91,7 +91,7 @@ const Navbar = () => {
             <h3  style={{marginTop:"0px",fontSize:"24px"}}>Progressive AI</h3>
 
             <svg
-              onClick={toggleMenu}  onClick={() => setMenuOpen(false)}
+              onClick= {() => { toggleMenu , setMenuOpen(false) } }
               className="croess mt-0"
               xmlns="http://www.w3.org/2000/svg"
               width="16"
