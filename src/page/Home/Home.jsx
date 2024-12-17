@@ -138,15 +138,18 @@ const Home = () => {
       </section>
 
 
-      <section>
+      <section className="relative">
         <OurServices />
+
+        <img className="absolute divsImage -bottom-[34px] md:-bottom-[48px] lg:-bottom-[68px] xl:-bottom-[90px] 2xl:-bottom-[118px] scale-y-[-1] " src={group} alt="" />
       </section >
 
 
       
      
-      <section>
+      <section className="relative">
         <TimelineSection />
+        <img className="absolute divsImage -bottom-[34px] md:-bottom-[48px] lg:-bottom-[68px] xl:-bottom-[90px] 2xl:-bottom-[118px] scale-y-[-1] " src={group} alt="" />
       </section> 
 
         <section> 

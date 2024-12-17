@@ -88,11 +88,11 @@ const Chooses = () => {
       }
     }
   }, [currentIndex]); 
-  console.log(currentIndex ,'thihsahrftashrfs')
+  
 
   return (
     <div className="bg-[#032124]" >
-      <div className=" pt-[48px] lg:py-[100px] lg:pb-[200px] max-w-[1320px] mx-auto px-5  min-h-[300vh]  relative z-0 font-plexs " ref={sectionRef}>
+      <div className=" lg:py-[100px]  lg:pt-[150px] xl:pt-[200px] pt-[80px] sm:pt-[90px] md:pt-[100px] lg:pb-[200px] max-w-[1320px] mx-auto px-5  min-h-[300vh]  relative z-0 font-plexs " ref={sectionRef}>
         <div className=" sticky-0 sticky top-0">
           <div className=" ">
             <div className="">
