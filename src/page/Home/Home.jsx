@@ -7,6 +7,7 @@ import OurServices from "../OurServices/OurServices";
 import group from "../../assets/image/group.png";
 // import Workflow from "../Workflow/Workflow";
 import { Typewriter } from "react-simple-typewriter";
+import { useState } from "react";
 import CaseStudies from "../../components/other/case-studies/CaseStudies";
 import ClientTestimonials from "../../components/other/client-testimonials/ClientTestimonials";
 import FormSchedule from "../../components/other/Form-schedule/FormSchedule";
@@ -18,6 +19,44 @@ import TimelineSection from "../../components/other/workflow/Workflow";
 
 
 const Home = () => {
+
+  const typewriterWords = [
+    "Artificial Intelligence Solutions",
+    "Integration Consulting",
+    "Data Analytics",
+    " ",
+    " ",
+  ];
+
+  // Dynamic content arrays for h1, p, and button
+  const h1DynamicTexts = [
+    "Automate Your Business With Custom",
+    "Make Smarter, And Profitable Decisions With Our AI",
+    "Get An Edge Over The Competition With Predictive",
+    "Get AI Training and Build A Capable Future-Ready Teams",
+    "AI Governance And Compliance For A Future-Proof Business",
+  ];
+
+  const pDynamicTexts = [
+    "From Advanced AI Solutions, to Predictive Data Analytics, insightful AI Consulting, AI Training and even AI Compliance, our arsenal has all the AI tools you need to disrupt your industry.",
+    "We provide consultation on how AI can be weaved in your business. Think 10X conversions, increased production efficiency, reduced costs, and more.",
+    "Looking to plan for future, and optimize your systems? Identify opportunities, avoids risks, and create strategies with AI powered Predictive analytics.",
+    "After implementing our custom AI solutions, our experts will train your team to effectively operate, maintain, and leverage the solutions.",
+    "Stay on top of new industry standards and regulations with ethical and responsible AI governance frameworks.",
+  ];
+
+  const buttonDynamicTexts = [
+    "Get Started",
+    "Schedule a free consultation",
+    "Start Now",
+    "Enquire Now",
+    "Enquire Now",
+  ];
+
+    // State to manage index of the currently displayed dynamic text
+    const [dynamicIndex, setDynamicIndex] = useState(0);
+
+
   return (
     <>
       <header className="header relative w-full overflow-hidden">
@@ -40,49 +79,52 @@ const Home = () => {
               </span>
               <br />
               <h1 className="height-typewriter">
-                Automate Your Business With Custom{" "}
-                <span style={{ color: "#12C6D8" }}>
-                  <Typewriter
-                    words={[
-                      "Artificial Intelligence Solutions",
-                      "Artificial Intelligence Solutions",
-                      "Artificial Intelligence Solutions",
-                      "Artificial Intelligence Solutions!",
-                    ]}
-                    loop={5}
-                    cursor
-                    // cursorStyle='।'
-                    typeSpeed={100}
-                    // deleteSpeed={50}
-                    delaySpeed={1000}
-                    // onLoopDone={handleDone}
-                    // onType={handleType}
-                  />
-                </span>
-              </h1>
-              <p>
-                From Advanced AI Solutions, to Predictive Data Analytics,
-                insightful AI Consulting, AI Training, and even AI Compliance,
-                our arsenal has all the AI tools you need to disrupt your
-                industry.
-              </p>
+        {h1DynamicTexts[dynamicIndex]}{" "}
+        <span style={{ color: "#12C6D8" }}>
+          <Typewriter
+            words={[
+              "Artificial Intelligence Solutions",
+              "Integration Consulting",
+              "Data Analytics",
+              "                    ",
+              "                    "
+            ]}
+            loop={5}
+            cursor
+            typeSpeed={100}
+            deleteSpeed={50}
+            delaySpeed={1500}
+            onType={(typedWord) => {
+              const resetTypedWord = typedWord % 5;
+              const newIndex = typewriterWords.findIndex((word,index) => index === resetTypedWord);
+              console.log(newIndex)
+              if (newIndex !== -1) {
+                setDynamicIndex(newIndex); // Update index dynamically inline
+              }
+            }}// Update index on word change
+          />
+        </span>
+      </h1>
+      <p className="font-helvetica  text-[#E9E9EA] text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] lg:mt-6 mt-[16px]">{pDynamicTexts[dynamicIndex]}</p>
 
-              <div className="button-container">
-                <button className="corner-button">
-                  <span>Get Started</span>
-                </button>
-              </div>
+      <div className="button-containerNew mt-[32px] ">
+        <button className="corner-buttonNew  px-5 uppercase font-plexs lg:text-[18px] text-[14px] sm:text-[15px] md:text-[16px]  font-[500]" style={{background:"#12C6D8"}}>
+          <span>{buttonDynamicTexts[dynamicIndex]}</span>
+        </button>
+      </div>
             </div>
 
             <div className="orContent">
-              <div class="circle-button"></div>
+              <div className="circle-button">
+                <img className="rightarrow" src="images/rightArrow.png" alt="" />
+              </div>
               <div className="orHero">
                 <div className="Profits">
                   <div className="left">
-                    <h2>40%</h2>
-                    <p>Rise In Profits</p>
+                    <h2 className="text-[20px] sm:text-[24px] md:text-[26px]">40%</h2>
+                    <p className="text-[14px] lg:text-[18px] md:text-[16px]">Rise In Profits</p>
                   </div>
-                  <span class="arrow">
+                  <span class="arrow ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="14"
@@ -101,8 +143,8 @@ const Home = () => {
                 </div>
                 <div className="Profits" style={{ marginTop: "23px" }}>
                   <div className="left">
-                    <h2>40%</h2>
-                    <p>Rise In Profits</p>
+                    <h2 className="text-[20px] sm:text-[24px] md:text-[26px]">70%</h2>
+                    <p className="text-[14px] lg:text-[18px] md:text-[16px]">Work Automation</p>
                   </div>
                   <span class="arrow">
                     <svg
@@ -132,7 +174,7 @@ const Home = () => {
         <About />
 
      <div className=" ">
-     <img className="divsImages  absolute -bottom-[10px] md:-bottom-[12px] lg:-bottom-[16px] xl:-bottom-[22px] " src={group} alt="" />
+     <img className="divsImages  absolute -bottom-[10px] md:-bottom-[12px] lg:-bottom-[16px] xl:-bottom-[22px] z-10" src={group} alt="" />
      {/* <img className="divsImage -bottom-[2] scale-y-[-1]" src={group} alt="" /> */}
      </div>
       </section>

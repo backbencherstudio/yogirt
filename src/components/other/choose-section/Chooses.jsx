@@ -98,7 +98,7 @@ const Chooses = () => {
             <div className="">
               <div className="text-[#12C6D8] uppercase xl:w-[1021px]">
                 <p className="text-[12px] md:text-[16px] lg:text-[18px] font-[500] ">[ 005// Why Choose Us ]</p>
-                <h2 className="text-white text-[20px]  md:text-[26px] lg:text-[32px] xl:text-[40px] font-[700] pt-[15px] font-plexs">AI is a rapidly developing industry, evolving by the minute. Our experts are always researching to keep up and  <span className="text-[#12C6D8]" >deliver the most cutting-edge solutions,</span> ensuring your business gets the best AI has to offer.</h2>
+                <h2 className="text-white text-[20px]  md:text-[26px] lg:text-[32px] xl:text-[40px] font-[700] pt-[15px] font-plexs mb-[96px] md:mb-[112px] lg:mb-0">AI is a rapidly developing industry, evolving by the minute. Our experts are always researching to keep up and  <span className="text-[#12C6D8]" >deliver the most cutting-edge solutions,</span> ensuring your business gets the best AI has to offer.</h2>
               </div>
             </div>
             <div className="lg:flex hidden lg:h-96 xl:mt-[100px] lg:mt-[60px] mt-[42px]   " ref={contentRef}>

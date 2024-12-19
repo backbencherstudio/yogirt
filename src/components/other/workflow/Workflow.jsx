@@ -48,8 +48,32 @@ const TimelineSection = () => {
         // const h = "100px"
         const { top, height } = stepperRef.current.getBoundingClientRect();
         const totalHeight = (height  )- window.innerHeight;
-        const scrollProgress = Math.max(0, Math.min(1.1, -top * 1 / (totalHeight ))); // Added extra 100px for smooth final step focus
-        setScrollProgress(scrollProgress);
+        // const scrollProgress = Math.max(0, Math.min(1.1, -top * 1 / (totalHeight ))); // Added extra 100px for smooth final step focus
+
+        if(window.innerWidth >= 1024 ){
+
+          const scrollProgress = Math.max(
+            0,
+            Math.min(1.1, ( -top + window.innerHeight * 0.2) / (totalHeight * 1.2))
+          );
+          setScrollProgress(scrollProgress);
+        }
+        if(window.innerWidth < 1024 && window.innerWidth >= 768 ){
+
+          const scrollProgress = Math.max(
+            0,
+            Math.min(1.1, ( -top + window.innerHeight * 1) / (totalHeight * 1.1))
+          );
+          setScrollProgress(scrollProgress);
+        }
+        if(window.innerWidth <= 768 ){
+
+          const scrollProgress = Math.max(
+            0,
+            Math.min(1.1, ( -top + window.innerHeight * 0.3) / (totalHeight * 1.2))
+          );
+          setScrollProgress(scrollProgress);
+        }
       }
     };
   
@@ -103,7 +127,7 @@ const TimelineSection = () => {
   //   );
   // };
   const calculateStepProgress = (index) => {
-    const stepTriggerPoint = index / steps.length;
+    const stepTriggerPoint = index / steps.length ;
     const stepCompletion = (scrollProgress - stepTriggerPoint) * steps.length;
     return Math.max(0, Math.min(1, stepCompletion));
   };
@@ -119,7 +143,7 @@ const TimelineSection = () => {
             </div>
       <div
       ref={stepperRef}
-      className="relative max-w-[1320px]  mx-auto px-4 2xl:pt-[250px] xl:pt-[400px] lg:pt-[450px] md:pt-[250px] pt-[375px] sm:pt-[300px] "
+      className="relative max-w-[1320px]  mx-auto px-4 2xl:pt-[250px] xl:pt-[300px] lg:pt-[275px] md:pt-[150px] pt-[150px]  "
     >
       
       {/* Vertical Progress Line */}

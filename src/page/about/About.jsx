@@ -3,7 +3,7 @@ import "./about.scss";
 const About = () => {
   return (
     <>
-      <marquee className={"marquee"}>
+      <marquee className="marquee my-12 md:my-[84px] lg:mt-[93px] lg:mb-[186px] text-[48px] sm:text-[80px] md:text-[100px] lg:text-[120px]">
         Progressive AI - AI Solutions - Businesses Progressive AI - AI Solutions - Businesses
       </marquee>
 
@@ -22,7 +22,7 @@ const About = () => {
         </div>
       </div>
 
-      <div class="strateg pb-12 sm:pb-[72px] md:pb-[100px] lg:pb-[150px] xl:pb-[200px]">
+      <div className="strateg pb-12 sm:pb-[72px] md:pb-[100px] lg:pb-[150px] xl:pb-[200px]">
         <div data-aos="fade-up" className="StrategicSolutions left">
           <span>[ Strategic Solutions ]</span>
           <p>

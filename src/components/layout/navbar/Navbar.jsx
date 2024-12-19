@@ -154,8 +154,8 @@ const Navbar = () => {
         </div>
 
         <div className={`button-container  ${menuOpen ? "hidden" : ""}`}>
-          <button className="corner-button">
-            <span>Test Button</span>
+          <button className="corner-button uppercase">
+            <span className="text-[18px] font-plexs">Contact us</span>
           </button>
         </div>
       </nav>

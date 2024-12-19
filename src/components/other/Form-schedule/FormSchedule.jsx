@@ -5,7 +5,7 @@ const FormSchedule = () => {
         <div className=" bg-[#010d0e] font-plexs px-5">
             <div className="pt-[48px] lg:py-[100px] max-w-[1320px] mx-auto">
                 <div className="form-header text-[#12C6D8] ">
-                    <p className="lg:text-[18px] text-[12px] sm:text-[14px] lg:[16px] font-[500] ">[ 008// Schedule free consultation! ]</p>
+                    <p className="lg:text-[18px] text-[12px] sm:text-[14px] lg:[16px] font-[500] uppercase">[ 008// Schedule free consultation! ]</p>
                     <h2 className="text-white xl:text-[40px] text-[22px] md:text-[26px] lg:text-[32px] font-[700] pt-[15px] uppercase">Fly to success, <br />
                         propelled by <span className=" text-[#12C6D8]">AI Solutions</span></h2>
                 </div>
@@ -82,14 +82,14 @@ const FormSchedule = () => {
 
                                 <div className=" mt-4 mb-6 flex   ">
                                     <div className=" mr-3  " >
-                                        <img src="images/star2.png" className="w-[100px] md:w-[80px] " alt="" />
+                                        <img src="images/star2.png" className="w-[100px] md:w-[60px] " alt="" />
                                     </div>
                                     <p className="text-[16px] lg:text-[18px]">Hello! I’m here to help you explore Progressive AI. Looking for info on our services, case studies, or anything specific? Just ask!</p>
                                 </div>
 
                                 <div className=" mt-4 mb-6 flex   ">
                                     <div className=" mr-3  " >
-                                        <img src="images/star2.png" className="w-[100px] md:w-[80px] " alt="" />
+                                        <img src="images/star2.png" className="w-[100px] md:w-[60px] " alt="" />
                                     </div>
                                     <p className="text-[16px] lg:text-[18px]">Welcome to Progressive AI! Need instant answers? Chat with me to learn how we can help solve your AI and data challenges.</p>
                                 </div>
