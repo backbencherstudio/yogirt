@@ -174,7 +174,7 @@ const Home = () => {
         <About />
 
      <div className=" ">
-     <img className="divsImages  absolute -bottom-[10px] md:-bottom-[12px] lg:-bottom-[16px] xl:-bottom-[22px] z-10" src={group} alt="" />
+     <img className="divsImages  absolute -bottom-[10px] md:-bottom-[12px] lg:-bottom-[16px] xl:-bottom-[22px] 2xl:-bottom-[30px] z-10" src={group} alt="" />
      {/* <img className="divsImage -bottom-[2] scale-y-[-1]" src={group} alt="" /> */}
      </div>
       </section>
