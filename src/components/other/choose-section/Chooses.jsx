@@ -2,6 +2,9 @@ import React, { useState, useRef, useEffect } from "react";
 import ChooseMobile from "./ChooseMobile";
 import "./choose.css"
 
+
+// =======================fresh one=================================
+
 // const Choosess = () => {
 
 //   const isScrolling = useRef(false); 
@@ -208,6 +211,9 @@ import "./choose.css"
 //     </div>
 //   );
 // };
+
+
+// =====================copy one of fresh on================================
 const Choosess = () => {
 
   const isScrolling = useRef(false);
@@ -416,6 +422,9 @@ const Choosess = () => {
 };
 
 // export default Chooses;
+
+
+// ============================new One===========================================
 
 const Chooses = () => {
   const [activeIndex, setActiveIndex] = useState(0);
