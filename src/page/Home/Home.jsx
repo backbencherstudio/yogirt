@@ -1,7 +1,7 @@
 import Navbar from "../../components/layout/navbar/Navbar";
 import "./home.scss";
 import video from "../../assets/video/-cbdd-4d17-b3eb-547afa894685.mp4";
-import {} from "../../assets/image/circle.png";
+import circle from "../../assets/image/circle.png";
 import About from "../about/About";
 import OurServices from "../OurServices/OurServices";
 import group from "../../assets/image/group.png";
@@ -115,7 +115,7 @@ const Home = () => {
             </div>
 
             <div className="orContent">
-              <div className="circle-button">
+              <div className="circle-button" style={{backgroundImage:`url(${circle})`}}>
                 <img className="rightarrow" src="images/rightArrow.png" alt="" />
               </div>
               <div className="orHero">

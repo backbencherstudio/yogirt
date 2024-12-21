@@ -140,7 +140,7 @@ const TimelineSection = () => {
                 <p className="text-[12px] md:text-[16px] lg:text-[18px] font-[500] ">[ 004// Our Workflow ]</p>
 
                 {/* //if need to space between h2 and timeline then h2 will be = relative max-w-[1021px] absolute pb-[130px] z-20 bg-[#021214]  */}
-                <h2 className="text-white  text-[20px]  md:text-[26px] lg:text-[32px] xl:text-[40px] font-[700] pt-[15px] font-plexs uppercase ">Take a sneak peak in our  <span className="text-[#12C6D8]" >tried and tested process</span> of helping business reach their peak potential with AI.</h2>
+                <h2 className="text-white  text-[20px]  md:text-[26px] lg:text-[32px] xl:text-[40px] font-[700] pt-[15px] font-plexs uppercase mb-8">Take a sneak peak in our  <span className="text-[#12C6D8]" >tried and tested process</span> of helping business reach their peak potential with AI.</h2>
               </div>
             </div>
       <div
