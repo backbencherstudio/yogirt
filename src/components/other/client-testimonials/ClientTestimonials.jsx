@@ -6,7 +6,7 @@ const ClientTestimonials = () => {
 
 
     return (
-        <div className=" lg:py-[100px] py-[32px] px-5 bg-[#010d0e] font-plexs">
+        <div className=" lg:py-[100px] py-[32px] px-4 2xl:px-0 bg-[#010d0e] font-plexs">
             <div className="max-w-[1320px] mx-auto ">
             <div className="form-header  text-[#12C6D8] uppercase xl:w-[868px]">
                 <p className="text-[12px] md:text-[16px] lg:text-[18px] font-[500] ">[ 007// Client Testimonials ]</p>

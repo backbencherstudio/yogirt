@@ -104,7 +104,7 @@
 }
 @media (min-width: 1700px) {
   .padding-correction{
-      padding-left: 300px;
+      padding-left: 292px;
   }
 }
 
@@ -113,4 +113,14 @@
 .middle-side.open {
  backdrop-filter: blur(1px);
  background-color: rgba(5, 24, 26, 0.69);
+}
+
+/* .section-container {
+  height: 300vh;
+  position: relative;
+} */
+
+.custom-scroll-container {
+  height: 100%;
+  overflow-y: auto;
 }

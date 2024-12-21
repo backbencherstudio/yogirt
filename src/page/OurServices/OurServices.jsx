@@ -626,7 +626,7 @@ const OurServices = () => {
   return (
     <div className="OurServices">
       <div className="service-container py-[52px] md:py-[96px] lg:py-[120px] xl:py-[150px] 2xl:py-[200px]">
-        <div className="about-service px-3" style={{ maxWidth: "1021px" }}> 
+        <div className="about-service " style={{ maxWidth: "1021px" }}> 
           <p  className="title text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] mb-[15px] ">
             [ 003// OUR Services ]
           </p>

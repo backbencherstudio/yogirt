@@ -8,13 +8,13 @@ import group from "../../assets/image/group.png";
 // import Workflow from "../Workflow/Workflow";
 import { Typewriter } from "react-simple-typewriter";
 import { useState } from "react";
+import Workflow from "../../components/other/workflow/Workflow";
+import Chooses from "../../components/other/choose-section/Chooses";
 import CaseStudies from "../../components/other/case-studies/CaseStudies";
 import ClientTestimonials from "../../components/other/client-testimonials/ClientTestimonials";
 import FormSchedule from "../../components/other/Form-schedule/FormSchedule";
 import FooterHeader from "../../components/other/footer/FooterHeader";
 import Footer from "../../components/other/footer/Footer";
-import Chooses from "../../components/other/choose-section/Chooses";
-import TimelineSection from "../../components/other/workflow/Workflow";
 
 
 
@@ -33,16 +33,16 @@ const Home = () => {
     "Automate Your Business With Custom",
     "Make Smarter, And Profitable Decisions With Our AI",
     "Get An Edge Over The Competition With Predictive",
-    "Get AI Training and Build A Capable Future-Ready Teams",
-    "AI Governance And Compliance For A Future-Proof Business",
+    "Get AI Training and Build A Capable Future-",
+    "AI Governance And Compliance For A Future-",
   ];
 
   const pDynamicTexts = [
     "From Advanced AI Solutions, to Predictive Data Analytics, insightful AI Consulting, AI Training and even AI Compliance, our arsenal has all the AI tools you need to disrupt your industry.",
-    "We provide consultation on how AI can be weaved in your business. Think 10X conversions, increased production efficiency, reduced costs, and more.",
-    "Looking to plan for future, and optimize your systems? Identify opportunities, avoids risks, and create strategies with AI powered Predictive analytics.",
-    "After implementing our custom AI solutions, our experts will train your team to effectively operate, maintain, and leverage the solutions.",
-    "Stay on top of new industry standards and regulations with ethical and responsible AI governance frameworks.",
+    // "We provide consultation on how AI can be weaved in your business. Think 10X conversions, increased production efficiency, reduced costs, and more.",
+    // "Looking to plan for future, and optimize your systems? Identify opportunities, avoids risks, and create strategies with AI powered Predictive analytics.",
+    // "After implementing our custom AI solutions, our experts will train your team to effectively operate, maintain, and leverage the solutions.",
+    // "Stay on top of new industry standards and regulations with ethical and responsible AI governance frameworks.",
   ];
 
   const buttonDynamicTexts = [
@@ -72,8 +72,8 @@ const Home = () => {
         <Navbar />
 
         <div className="container">
-          <div className="hero-content">
-            <div className="main-content">
+          <div className="hero-content relative lg:min-h-[600px] ">
+            <div className="main-content max-h-[550px]">
               <span className="small-title">
                 [ 001// Redefining AI Solutions for Tomorrow’s Challenges. ]
               </span>
@@ -86,18 +86,18 @@ const Home = () => {
               "Artificial Intelligence Solutions",
               "Integration Consulting",
               "Data Analytics",
-              "                    ",
-              "                    "
+              "Ready Teams",
+              "Proof Business"
             ]}
-            loop={5}
+            loop={1000}
             cursor
-            typeSpeed={100}
-            deleteSpeed={50}
+            typeSpeed={200}
+            deleteSpeed={100}
             delaySpeed={1500}
             onType={(typedWord) => {
               const resetTypedWord = typedWord % 5;
               const newIndex = typewriterWords.findIndex((word,index) => index === resetTypedWord);
-              console.log(newIndex)
+              // console.log(newIndex)
               if (newIndex !== -1) {
                 setDynamicIndex(newIndex); // Update index dynamically inline
               }
@@ -105,7 +105,7 @@ const Home = () => {
           />
         </span>
       </h1>
-      <p className="font-helvetica  text-[#E9E9EA] text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] lg:mt-6 mt-[16px]">{pDynamicTexts[dynamicIndex]}</p>
+      <p className="font-helvetica  text-[#E9E9EA] text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] lg:mt-6 mt-[16px]">{pDynamicTexts}</p>
 
       <div className="button-containerNew mt-[32px] ">
         <button className="corner-buttonNew  px-5 uppercase font-plexs lg:text-[18px] text-[14px] sm:text-[15px] md:text-[16px]  font-[500]" style={{background:"#12C6D8"}}>
@@ -113,8 +113,7 @@ const Home = () => {
         </button>
       </div>
             </div>
-
-            <div className="orContent">
+            <div className="orContent lg:absolute lg:right-0 lg:bottom-0 mt-[80px] ">
               <div className="circle-button" style={{backgroundImage:`url(${circle})`}}>
                 <img className="rightarrow" src="images/rightArrow.png" alt="" />
               </div>
@@ -166,6 +165,7 @@ const Home = () => {
               </div>
             </div>
           </div>
+
         </div>
         <div className="glass-overlay top-glass inset-0 h-full w-full object-cover z-0"></div>
         <div className="glass-overlay bottom-glass inset-0 h-full w-full object-cover z-0"></div>
@@ -190,7 +190,7 @@ const Home = () => {
       
      
       <section className="relative">
-        <TimelineSection />
+        <Workflow />
         <img className="absolute divsImage -bottom-[34px] md:-bottom-[48px] lg:-bottom-[68px] xl:-bottom-[90px] 2xl:-bottom-[118px] scale-y-[-1] " src={group} alt="" />
       </section> 
 

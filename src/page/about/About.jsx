@@ -3,7 +3,7 @@ import "./about.scss";
 const About = () => {
   return (
     <>
-      <marquee className="marquee my-12 md:my-[84px] lg:mt-[93px] lg:mb-[186px] text-[48px] sm:text-[80px] md:text-[100px] lg:text-[120px]"  scrollamount="20">
+      <marquee className="marquee my-12 md:my-[84px] lg:mt-[93px] lg:mb-[186px] text-[48px] sm:text-[80px] md:text-[100px] lg:text-[120px]" scrollamount="20">
         Progressive AI - AI Solutions - Businesses Progressive AI - AI Solutions - Businesses
       </marquee>
 

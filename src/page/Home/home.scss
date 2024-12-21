@@ -22,12 +22,14 @@
   margin: 0 auto;
 
   .hero-content {
-    position: relative;
+    // position: relative;
     z-index: 10;
-    margin-top: 130px;
+    margin-top: 128px;
+    // height: 800px;
 
     .main-content {
       max-width: 873px;
+    
 
       .small-title {
         color: var(--Main-Cayan, #12c6d8);
@@ -86,8 +88,8 @@
     .orContent {
       display: flex;
 
-      float: right;
-      margin-top: -50px;
+      // float: right;
+      // margin-top: -50px;
 
       .circle-button {
         // background-image: url("../../assets/image/circle.png");
@@ -98,7 +100,7 @@
         margin-right: 32px;
         background-color: transparent;
         animation-name: spin;
-        animation-duration: 6s;
+        animation-duration: 10s;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
         position: relative;
@@ -110,7 +112,7 @@
           left: 50%;
           transform: translate(-50%, -50%) rotate(-360deg);
           animation-name: spin-reverse;
-          animation-duration: 6s;
+          animation-duration: 10s;
           animation-timing-function: linear;
           animation-iteration-count: infinite;
           z-index: 1;
@@ -371,7 +373,7 @@ $background-color: #12c6d8;
   .container .hero-content .orContent {
     display: flex;
     float: left;
-    margin-top: 50px;
+    // margin-top: 50px;
     padding-bottom: 100px;
   }
 
@@ -384,7 +386,7 @@ $background-color: #12c6d8;
     width: min(1320px, 95vw);
 
     .hero-content {
-      margin-top: 50px;
+      margin-top: 48px;
 
       .main-content {
         h1 {
@@ -407,7 +409,7 @@ $background-color: #12c6d8;
 
 
     .hero-content {
-      margin-top: 50px;
+      margin-top: 48px;
 
       .main-content {
         h1 {

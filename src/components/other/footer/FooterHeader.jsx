@@ -3,7 +3,7 @@
 const FooterHeader = () => {
 
     return (
-        <div className="bg-gradient-to-r from-[#042d31] via-[#042528] to-[#031e20]  py-10 md:py-14 lg:py-[80px] px-5  font-plexs uppercase">
+        <div className="bg-gradient-to-r from-[#042d31] via-[#042528] to-[#031e20]  py-10 md:py-14 lg:py-[80px] px-4 2xl:px-0  font-plexs uppercase">
             <div className='max-w-[1320px] mx-auto'>
                 <div className="gap-8 text-white items-end grid lg:grid-cols-2">
                     <div className='w-auto' >

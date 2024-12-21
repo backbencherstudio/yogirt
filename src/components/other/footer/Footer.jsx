@@ -9,7 +9,7 @@ import './footer.css'
 const Footer = () => {
 
     return(
-        <div className=" uppercase footer-container bg-gradient-to-r from-[#06373b] via-[#04272a] to-[#031e20] px-5" >
+        <div className=" uppercase footer-container bg-gradient-to-r from-[#06373b] via-[#04272a] to-[#031e20] px-4 2xl:px-0" >
             <div className="pt-[48px] lg:pt-[100px] max-w-[1320px] mx-auto">
             <div className=" grid sm:grid-cols-2 sm:gap-y-20 lg:grid-cols-3 xl:grid-cols-4 text-white gap-12 xl:gap-12 lg:gap-10 border-t border-[#12C6D826] lg:pt-12 pt-6"  >
                 <div className="footer-logo col-span-1 font-helvetica ">

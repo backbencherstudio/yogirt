@@ -2,7 +2,7 @@ import { RiSendPlaneFill } from "react-icons/ri"
 const FormSchedule = () => {
 
     return (
-        <div className=" bg-[#010d0e] font-plexs px-5">
+        <div className=" bg-[#010d0e] font-plexs px-4 2xl:px-0">
             <div className="pt-[48px] lg:py-[100px] max-w-[1320px] mx-auto">
                 <div className="form-header text-[#12C6D8] ">
                     <p className="lg:text-[18px] text-[12px] sm:text-[14px] lg:[16px] font-[500] uppercase">[ 008// Schedule free consultation! ]</p>

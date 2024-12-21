@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
-const TimelineSection = () => {
+const Workflow = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
   const stepperRef = useRef(null);
 
@@ -135,7 +135,7 @@ const TimelineSection = () => {
 
   return (
     <div className="bg-[#021214] py-20 lg:py-[200px] ">
-      <div className="max-w-[1320px]  mx-auto px-4">
+      <div className="max-w-[1320px]  mx-auto px-4 2xl:px-0">
               <div className="text-[#12C6D8] uppercase xl:w-[1021px]">
                 <p className="text-[12px] md:text-[16px] lg:text-[18px] font-[500] ">[ 004// Our Workflow ]</p>
 
@@ -258,4 +258,4 @@ const TimelineSection = () => {
   );
 };
 
-export default TimelineSection;
+export default Workflow;
