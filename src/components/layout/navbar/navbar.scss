@@ -1,9 +1,10 @@
 .navbar {
-  height: 101px;
+  // height: 101px;
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(19.5px);
   position: relative;
   z-index: 100;
+  padding: 7px 0px;
 
   nav {
     max-width: 1320px;
@@ -264,7 +265,7 @@
   }
 }
 
-@media (max-width: 1320px) {
+@media (max-width: 1023px) {
   .navbar {
     nav {
       .middle-section {

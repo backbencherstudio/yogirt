@@ -184,7 +184,7 @@ const Workflow = () => {
             {/* Step Content */}
             <div
               className={` 
-                2xl:w-[30%] xl:w-[40%] lg:w-[42%] w-full rounded-lg shadow-md transition-all duration-300 
+                2xl:w-[30%] xl:w-[40%] lg:w-[42%] w-full rounded-lg shadow-md transition-all duration-300 responsive-margin
                 ${
                   isLeft
                     ? "lg:mr-auto sm:ml-[10%] ml-[30px] text-left"
@@ -200,7 +200,7 @@ const Workflow = () => {
               `}
               style={{
                 transform: `translateX(${
-                  window.innerWidth < 500 // Check screen width
+                  window.innerWidth < 646// Check screen width
                     ? -10 // Use fixed -10px translateX for small screens
                     : stepProgress > 0
                     ? isLeft

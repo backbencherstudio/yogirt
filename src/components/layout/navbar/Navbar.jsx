@@ -31,7 +31,7 @@ const Navbar = () => {
         {/* Hamburger Button */}
         <button
           onClick={toggleMenu}
-          className="lgs:hidden p-2 text-white focus:outline-none z-100 mr-2 "
+          className="lg:hidden p-2 text-white focus:outline-none z-100 mr-2 "
         >
           <div
             className={`w-6 h-1 bg-white mb-1 transition-transform ${

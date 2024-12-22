@@ -9,7 +9,8 @@ import group from "../../assets/image/group.png";
 import { Typewriter } from "react-simple-typewriter";
 import { useState } from "react";
 import Workflow from "../../components/other/workflow/Workflow";
-import Chooses from "../../components/other/choose-section/Chooses";
+// import Chooses from "../../components/other/choose-section/Chooses";
+import Choosess from "../../components/other/choose-section/Chossess";
 import CaseStudies from "../../components/other/case-studies/CaseStudies";
 import ClientTestimonials from "../../components/other/client-testimonials/ClientTestimonials";
 import FormSchedule from "../../components/other/Form-schedule/FormSchedule";
@@ -71,7 +72,7 @@ const Home = () => {
 
         <Navbar />
 
-        <div className="container">
+        <div className="containers">
           <div className="hero-content relative lg:min-h-[600px] ">
             <div className="main-content max-h-[550px]">
               <span className="small-title">
@@ -93,7 +94,7 @@ const Home = () => {
             cursor
             typeSpeed={200}
             deleteSpeed={100}
-            delaySpeed={1500}
+            delaySpeed={5000}
             onType={(typedWord) => {
               const resetTypedWord = typedWord % 5;
               const newIndex = typewriterWords.findIndex((word,index) => index === resetTypedWord);
@@ -114,8 +115,12 @@ const Home = () => {
       </div>
             </div>
             <div className="orContent lg:absolute lg:right-0 lg:bottom-0 mt-[80px] ">
-              <div className="circle-button" style={{backgroundImage:`url(${circle})`}}>
+              <div>
+                <a href="">
+                <div className="circle-button" style={{backgroundImage:`url(${circle})`}}>
                 <img className="rightarrow" src="images/rightArrow.png" alt="" />
+              </div>
+                </a>
               </div>
               <div className="orHero">
                 <div className="Profits">
@@ -195,7 +200,8 @@ const Home = () => {
       </section> 
 
         <section> 
-        <Chooses> </Chooses> 
+        {/* <Chooses> </Chooses>  */}
+        <Choosess></Choosess>
         </section>
 
       <section className="relative ">
