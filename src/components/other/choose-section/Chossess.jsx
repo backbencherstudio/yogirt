@@ -66,6 +66,7 @@ const Choosess = () => {
     useEffect(() => {
       const handleScroll = () => {
         const progress = calculateProgress();
+        
         const newIndex = Math.min(
           Math.floor(progress * content.length),
           content.length - 1
