@@ -55,8 +55,8 @@ const Home = () => {
     "Enquire Now",
   ];
 
-    // State to manage index of the currently displayed dynamic text
-    const [dynamicIndex, setDynamicIndex] = useState(0);
+  // State to manage index of the currently displayed dynamic text
+  const [dynamicIndex, setDynamicIndex] = useState(0);
 
 
   return (
@@ -81,93 +81,105 @@ const Home = () => {
               </span>
               <br />
               <h1 className="height-typewriter">
-        {h1DynamicTexts[dynamicIndex]}{" "}
-        <span style={{ color: "#12C6D8" }}>
-          <Typewriter
-            words={[
-              "Artificial Intelligence Solutions",
-              "Integration Consulting",
-              "Data Analytics",
-              "Ready Teams",
-              "Proof Business"
-            ]}
-            loop={1000}
-            cursor
-            typeSpeed={200}
-            deleteSpeed={100}
-            delaySpeed={5000}
-            onType={(typedWord) => {
-              const resetTypedWord = typedWord % 5;
-              const newIndex = typewriterWords.findIndex((word,index) => index === resetTypedWord);
-              // console.log(newIndex)
-              if (newIndex !== -1) {
-                setDynamicIndex(newIndex); // Update index dynamically inline
-              }
-            }}// Update index on word change
-          />
-        </span>
-      </h1>
-      <p className="font-helvetica  text-[#E9E9EA] text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] lg:mt-6 mt-[16px]">{pDynamicTexts}</p>
+                {h1DynamicTexts[dynamicIndex]}{" "}
+                <span style={{ color: "#12C6D8" }}>
+                  <Typewriter
+                    words={[
+                      "Artificial Intelligence Solutions",
+                      "Integration Consulting",
+                      "Data Analytics",
+                      "Ready Teams",
+                      "Proof Business"
+                    ]}
+                    loop={5000}
+                    cursor
+                    typeSpeed={200}
+                    deleteSpeed={100}
+                    delaySpeed={5000}
+                    onType={(typedWord) => {
+                      const resetTypedWord = typedWord % 5;
+                      const newIndex = typewriterWords.findIndex((word, index) => index === resetTypedWord);
+                      // console.log(newIndex)
+                      if (newIndex !== -1) {
+                        setDynamicIndex(newIndex); // Update index dynamically inline
+                      }
+                    }}// Update index on word change
+                  />
+                </span>
+              </h1>
+              <p className="font-helvetica  text-[#E9E9EA] text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] lg:mt-6 mt-[16px]">{pDynamicTexts}</p>
 
-      <div className="button-containerNew mt-[32px] ">
-        <button className="corner-buttonNew  px-5 uppercase font-plexs lg:text-[18px] text-[14px] sm:text-[15px] md:text-[16px]  font-[500]" style={{background:"#12C6D8"}}>
-          <span>{buttonDynamicTexts[dynamicIndex]}</span>
-        </button>
-      </div>
+              <div className="button-containerNew mt-[32px] ">
+                <button className="corner-buttonNew  px-5 uppercase font-plexs lg:text-[18px] text-[14px] sm:text-[15px] md:text-[16px]  font-[500]" style={{ background: "#12C6D8" }}>
+                  <span>{buttonDynamicTexts[dynamicIndex]}</span>
+                </button>
+              </div>
             </div>
             <div className="orContent lg:absolute lg:right-0 lg:bottom-0 mt-[80px] ">
               <div>
                 <a href="">
-                <div className="circle-button" style={{backgroundImage:`url(${circle})`}}>
-                <img className="rightarrow" src="images/rightArrow.png" alt="" />
-              </div>
+                  <div className="circle-button " style={{ backgroundImage: `url(${circle})`, backgroundColor: "rgba(18, 198, 216, 0.15)", backdropFilter: "blur(15px)", borderRadius: "50%" }}>
+                    <img className="rightarrow" src="images/rightArrow.png" alt="" />
+                  </div>
                 </a>
               </div>
               <div className="orHero">
-                <div className="Profits">
-                  <div className="left">
-                    <h2 className="text-[20px] sm:text-[24px] md:text-[26px]">40%</h2>
-                    <p className="text-[14px] lg:text-[18px] md:text-[16px]">Rise In Profits</p>
-                  </div>
-                  <span class="arrow ">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      fill="none"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M5.9999 0.25C5.58569 0.249986 5.24989 0.585761 5.24988 0.999974C5.24986 1.41419 5.58564 1.74999 5.99985 1.75L11.1891 1.75018L0.469667 12.4697C0.176776 12.7626 0.176778 13.2374 0.469673 13.5303C0.762567 13.8232 1.23744 13.8232 1.53033 13.5303L12.25 2.81058L12.2499 7.99999C12.2499 8.4142 12.5857 8.74999 12.9999 8.75C13.4141 8.75001 13.7499 8.41423 13.7499 8.00001L13.75 1.00025C13.75 0.89122 13.7267 0.78762 13.6849 0.694148C13.6486 0.612734 13.597 0.536467 13.5302 0.469667C13.3789 0.31838 13.1791 0.245238 12.9808 0.25024L5.9999 0.25Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </span>
+                <div>
+                  <a href="https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier" target="_blank" rel="noopener noreferrer">
+                    <div className="Profits">
+                      <div className="left">
+                        <h2 className="text-[20px] sm:text-[24px] md:text-[26px]">40%</h2>
+                        <p className="text-[14px] lg:text-[18px] md:text-[16px]">Rise In Profits</p>
+                      </div>
+                      <a href="https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier">
+                        <span class="arrow ">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="14"
+                            height="14"
+                            viewBox="0 0 14 14"
+                            fill="none"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M5.9999 0.25C5.58569 0.249986 5.24989 0.585761 5.24988 0.999974C5.24986 1.41419 5.58564 1.74999 5.99985 1.75L11.1891 1.75018L0.469667 12.4697C0.176776 12.7626 0.176778 13.2374 0.469673 13.5303C0.762567 13.8232 1.23744 13.8232 1.53033 13.5303L12.25 2.81058L12.2499 7.99999C12.2499 8.4142 12.5857 8.74999 12.9999 8.75C13.4141 8.75001 13.7499 8.41423 13.7499 8.00001L13.75 1.00025C13.75 0.89122 13.7267 0.78762 13.6849 0.694148C13.6486 0.612734 13.597 0.536467 13.5302 0.469667C13.3789 0.31838 13.1791 0.245238 12.9808 0.25024L5.9999 0.25Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+                  </a>
                 </div>
-                <div className="Profits" style={{ marginTop: "23px" }}>
+                 <div>
+                    <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="noopener noreferrer">
+                    <div className="Profits" style={{ marginTop: "23px" }}>
                   <div className="left">
                     <h2 className="text-[20px] sm:text-[24px] md:text-[26px]">70%</h2>
                     <p className="text-[14px] lg:text-[18px] md:text-[16px]">Work Automation</p>
                   </div>
-                  <span class="arrow">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      fill="none"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M5.9999 0.25C5.58569 0.249986 5.24989 0.585761 5.24988 0.999974C5.24986 1.41419 5.58564 1.74999 5.99985 1.75L11.1891 1.75018L0.469667 12.4697C0.176776 12.7626 0.176778 13.2374 0.469673 13.5303C0.762567 13.8232 1.23744 13.8232 1.53033 13.5303L12.25 2.81058L12.2499 7.99999C12.2499 8.4142 12.5857 8.74999 12.9999 8.75C13.4141 8.75001 13.7499 8.41423 13.7499 8.00001L13.75 1.00025C13.75 0.89122 13.7267 0.78762 13.6849 0.694148C13.6486 0.612734 13.597 0.536467 13.5302 0.469667C13.3789 0.31838 13.1791 0.245238 12.9808 0.25024L5.9999 0.25Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </span>
+                  <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai">
+                    <span class="arrow">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M5.9999 0.25C5.58569 0.249986 5.24989 0.585761 5.24988 0.999974C5.24986 1.41419 5.58564 1.74999 5.99985 1.75L11.1891 1.75018L0.469667 12.4697C0.176776 12.7626 0.176778 13.2374 0.469673 13.5303C0.762567 13.8232 1.23744 13.8232 1.53033 13.5303L12.25 2.81058L12.2499 7.99999C12.2499 8.4142 12.5857 8.74999 12.9999 8.75C13.4141 8.75001 13.7499 8.41423 13.7499 8.00001L13.75 1.00025C13.75 0.89122 13.7267 0.78762 13.6849 0.694148C13.6486 0.612734 13.597 0.536467 13.5302 0.469667C13.3789 0.31838 13.1791 0.245238 12.9808 0.25024L5.9999 0.25Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                  </a>
                 </div>
+                    </a>
+                 </div>
               </div>
             </div>
           </div>
@@ -179,10 +191,10 @@ const Home = () => {
       <section className="about-me relative xl:pb-[100px]">
         <About />
 
-     <div className=" ">
-     <img className="divsImages  absolute -bottom-[10px] md:-bottom-[12px] lg:-bottom-[16px] xl:-bottom-[22px] 2xl:-bottom-[30px] z-10" src={group} alt="" />
-     {/* <img className="divsImage -bottom-[2] scale-y-[-1]" src={group} alt="" /> */}
-     </div>
+        <div className=" ">
+          <img className="divsImages  absolute -bottom-[10px] md:-bottom-[12px] lg:-bottom-[16px] xl:-bottom-[22px] 2xl:-bottom-[30px] z-10" src={group} alt="" />
+          {/* <img className="divsImage -bottom-[2] scale-y-[-1]" src={group} alt="" /> */}
+        </div>
       </section>
 
 
@@ -192,44 +204,44 @@ const Home = () => {
       </section >
 
 
-      
-     
+
+
       <section className="relative">
         <Workflow />
         <img className="absolute divsImage -bottom-[34px] md:-bottom-[48px] lg:-bottom-[68px] xl:-bottom-[90px] 2xl:-bottom-[118px] scale-y-[-1] " src={group} alt="" />
-      </section> 
+      </section>
 
-        <section> 
+      <section>
         {/* <Chooses> </Chooses>  */}
         <Choosess></Choosess>
-        </section>
+      </section>
 
       <section className="relative ">
         {/* <Choose /> */}
-      {/* <div className="relative "> */}
-     <img className="absolute divsImage -bottom-[34px] md:-bottom-[48px] lg:-bottom-[68px] xl:-bottom-[90px] 2xl:-bottom-[118px] scale-y-[-1] " src={group} alt="" />
-  
-     {/* </div> */}
+        {/* <div className="relative "> */}
+        <img className="absolute divsImage -bottom-[34px] md:-bottom-[48px] lg:-bottom-[68px] xl:-bottom-[90px] 2xl:-bottom-[118px] scale-y-[-1] " src={group} alt="" />
+
+        {/* </div> */}
       </section>
 
 
-      <section  className="overflow-hidden">
+      <section className="overflow-hidden">
         <CaseStudies />
       </section>
 
-        
-      <section  className="overflow-hidden">
+
+      <section className="overflow-hidden">
         <ClientTestimonials />
       </section>
 
-      <section  className="overflow-hidden">
+      <section className="overflow-hidden">
         <FormSchedule />
       </section>
 
-      <section  className="overflow-hidden">
+      <section className="overflow-hidden">
         <FooterHeader />
       </section>
-      <section  className="overflow-hidden">
+      <section className="overflow-hidden">
         <Footer />
       </section>
     </>

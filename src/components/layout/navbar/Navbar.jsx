@@ -12,12 +12,11 @@ const Navbar = () => {
   const toggleMenu = () => setMenuOpen((prev) => !prev);
 
   return (
-    <div className="navbar">
-      <nav>
+    <div className="navbar lg:py-[14px] py-2">
+      <nav className="flex justify-between ">
         <NavLink to="/" className="logo ">
           <img
             className="appLogo "
-            style={{ marginTop: "10px" }}
             src={appLogo}
             alt="App Logo"
           />
@@ -80,11 +79,11 @@ const Navbar = () => {
 
         {/* Sidebar */}
         <div
-          className={`osodod  bg-bl top-0 right-0  w-full  text-white shadow-lg transform transition-transform duration-300 ease-in-out absolute ${
+          className={`osodod lg:hidden bg-bl top-0 right-0   w-full  text-white shadow-lg transform transition-transform duration-300 ease-in-out absolute ${
             menuOpen ? "translate-x-0 open" : "translate-x-full"
           }`}
         >
-          <div className="heads-s  items-center" style={{background:"rgba(255, 255, 255, 0.08)",paddingTop:"0px"}}>
+          <div className="heads-s lg:py-[14px] py-2 items-center" style={{background:"rgba(255, 255, 255, 0.08)"}}>
             <NavLink to="/" className="logo mar">
               <img className="appLogo " src={appLogo} alt="App Logo" />
             </NavLink>
@@ -153,8 +152,8 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className={`button-container  ${menuOpen ? "hidden" : ""}`}>
-          <button className="corner-button uppercase">
+        <div className={`button-container2 hidden lg:block pr- 2xl:pr-0 ${menuOpen ? "hidden" : ""}`}>
+          <button className="corner-button2 uppercase">
             <span className="text-[18px] font-plexs">Contact us</span>
           </button>
         </div>

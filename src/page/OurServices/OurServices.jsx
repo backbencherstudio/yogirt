@@ -626,19 +626,17 @@ const OurServices = () => {
   return (
     <div className="OurServices">
       <div className="service-container py-[52px] md:py-[96px] lg:py-[120px] xl:py-[150px] 2xl:py-[200px]">
-        <div className="about-service " style={{ maxWidth: "1021px" }}> 
-          <p  className="title text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] mb-[15px] ">
-            [ 003// OUR Services ]
-          </p>
-          <div className="des text-[20px] lg:text-[30px] xl:text-[40px] font-[700] text-[#D2D2D5] font-plexs uppercase"  >
-            With us, as your Artificial intelligence automation partner, you get
-            the best in industry technologies of tomorrow, <span className="text-[#12C6D8]">TODAY.</span>
-          </div>
-        </div>
- 
+      <div className="max-w-[1320px]  mx-auto px-4 2xl:px-0">
+              <div className="text-[#12C6D8] uppercase xl:w-[1021px]">
+                <p className="text-[12px] md:text-[16px] lg:text-[18px] font-[500] ">[ 003// OUR Services ]</p>
 
+                {/* //if need to space between h2 and timeline then h2 will be = relative max-w-[1021px] absolute pb-[130px] z-20 bg-[#021214]  */}
+                <h2 className="text-white  text-[20px]  md:text-[26px] lg:text-[32px] xl:text-[40px] font-[700] pt-[15px] font-plexs uppercase mb-8">With us, as your Artificial intelligence automation partner, you get
+                the best in industry technologies of tomorrow, <span className="text-[#12C6D8]">TODAY.</span></h2>
+              </div>
+            </div>
 
-        <div className="card-containner ">
+        <div className="card-containner mt-[100px] ">
           {contentData.map((content, index) => (
             <div className="" data-aos="fade-up" onMouseLeave={() => setFlippedIndex(null)}>
               <div
